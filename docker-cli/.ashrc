@@ -1,0 +1,6 @@
+export LSCOLORS=ExGxFxdxCxDxDxxbaDecac
+export CLICOLOR=1
+alias ls='ls -hal --color=auto'
+alias ll='ls -alF --color=auto'
+
+export PS1="\[\e[32m\]\u@\h \w\[\e[91m\]\[\e[00m\]$ "

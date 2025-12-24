@@ -1,0 +1,53 @@
+  549  mkdir firstdocker
+  550  cd firstdocker/
+  551  ls
+  552  # Create a sample index.html file
+  553  ls
+  554  nano index.html
+  555  ls
+  556  sync
+  557  touch Dockerfile
+  558  ls
+  559  nano Dockerfile
+  560  docker build -t my-nginx-image:1.0 .
+  561  docker ps
+  562  docker imagese
+  563  docker images
+  564  docker run -p 8080:80 --name my-web-container my-nginx-image:1.0
+  565  ls
+  566  docker images
+  567  docker run -p 8080:80 --name firstdocker my-nginx-image:1.0
+  568  docker run -it --name firstdocker my-nginx-image:1.0 bash
+  569  docker images
+  570  docker stop 4d884c8db882
+  571  sync
+  572  docker run -it --name firstdocker my-nginx-image:1.0 bash
+  573  docker run --help
+  574  history
+  575  docker build --help
+  576  docker ps -a
+  577  docker ps
+  578  docker stop c6a055556127
+  579  docker stop a929ec1ec230
+  580  docker run -it --name firstdocker my-nginx-image:1.0 bash
+  581  docker stop c6a055556127703d4671b03ab1b4e4cc6afd43131b1de06f3bde6e901453558a
+  582  docker run -it --name firstdocker my-nginx-image:1.0 bash
+  583  docker rm c6a055556127703d4671b03ab1b4e4cc6afd43131b1de06f3bde6e901453558a
+  584  docker run -it --name firstdocker my-nginx-image:1.0 bash
+  585  docker run -it --name firstdocker my-nginx-image:1.0 ash
+  586  docker ps
+  587  docker rm a60c9c81d205510b57354675f65961f4336f6e47a62ff8c73a37ed36898b8c88
+  588  docker run -it --name firstdocker my-nginx-image:1.0 ash
+  589  docker commit firstdocker my-nginx-image:1.0
+  590  docker run -it --name firstdocker my-nginx-image:1.0 ash
+  591  docker rm abd95946459cd7da568665e73abea5af3be9767d175c658e748be377710229e6
+  592  docker run -it --name firstdocker my-nginx-image:1.0 ash
+  593  docker commit firstdocker my-nginx-image:1.0
+  594  docker run -it --name firstdocker my-nginx-image:1.0 ash
+  595  docker rm e74fefc7489dd4161f44bc65674889dec274ad25a54fd004a42f5c0c35923ab3
+  596  docker run -it --name firstdocker my-nginx-image:1.0 ash
+  597  docker commit firstdocker my-nginx-image:1.0
+  603  docker login
+  604  docker images
+  605  docker tag my-nginx-image:1.0 loufrankel/my-nginx-image
+  606  docker push loufrankel/my-nginx-image
